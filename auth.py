@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from backend.db import User, SessionLocal
+from db import User, SessionLocal
 import hashlib
 import os
 
