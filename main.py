@@ -2,12 +2,12 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.ai import router as ai_router
+from ai import router as ai_router
 
-from backend.auth import router as auth_router
-from backend.ai import router as ai_router
-from backend.echo import router as echo_router
-from backend.db import Base, engine
+from auth import router as auth_router
+from ai import router as ai_router
+from echo import router as echo_router
+from db import Base, engine
 
 load_dotenv()
 
